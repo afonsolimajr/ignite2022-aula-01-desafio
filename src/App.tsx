@@ -1,11 +1,16 @@
-import "./App.module.css";
+import { FormTodo } from "./components/FormTodo";
 import { Logo } from "./components/Logo";
+
+import "./App.module.css";
 
 function App() {
   return (
-    <header>
-      <Logo />
-    </header>
+    <div className="container">
+      <header>
+        <Logo />
+      </header>
+      <FormTodo />
+    </div>
   );
 }
 

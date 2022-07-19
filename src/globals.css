@@ -38,3 +38,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+html {
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-itens: center;
+}

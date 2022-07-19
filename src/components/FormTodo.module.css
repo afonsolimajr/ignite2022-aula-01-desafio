@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 90%;
+  top: -25px;
+  position: relative;
+  /* border: 1px solid lime; */
+}
+
+button {
+  height: 50px;
+  background: var(--blue-dark);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: var(--blue);
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  background: var(--gray-500);
+  border-color: var(--gray-700);
+  border-radius: 8px;
+}
