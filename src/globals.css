@@ -40,11 +40,24 @@
 }
 
 html {
+  display: flex;
+  height: 100%;
+  /* flex-direction: column; */
+  /* align-itens: center; */
+  /* justify-content: flex-end; */
   color: #fff;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  align-itens: center;
+  /* vertical-align: middle; */
+  /* align-itens: center; */
+  /* min-height: 100%; */
+  width: 100%;
+  /* max-width: 640px; */
+  height: 100%;
+  border: 1px solid yellow;
+  /* padding: 1em; */
+  margin: auto;
 }

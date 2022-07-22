@@ -2,18 +2,24 @@
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  width: 90%;
-  top: -25px;
-  position: relative;
-  /* border: 1px solid lime; */
+  width: 100%;
+  /* top: -25px; */
+  /* position: relative; */
+  border: 1px solid lime;
+  /* border: 0; */
 }
 
 button {
+  display: flex;
   height: 50px;
+  width: auto;
   background: var(--blue-dark);
   color: #fff;
   padding: 1rem;
   border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 button:hover {

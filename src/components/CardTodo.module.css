@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 50px;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  gap: 1rem;
+}
+
+p {
+  color: var(--gray-200);
+  width: 100%;
+}
+
+span {
+  color: var(--gray-300);
+}
+
+.checkbox {
+  height: 24px;
+  border-radius: 50%;
+}
+
+.checked {
+  color: var(--purple);
+  weight: fill;
+}
+
+.unchecked {
+  color: var(--blue);
+}
+
+.trash {
+  color: var(--gray-300);
+}

@@ -1,11 +1,42 @@
+import { PlusCircle } from "phosphor-react";
+import { useState } from "react";
+import { ITarefa } from "../interfaces/ITarefa";
+import uuid from "react-uuid";
 import styles from "./FormTodo.module.css";
 
-export const FormTodo = () => {
+interface FormTodoProps {
+  onCreateTask: (task: ITarefa) => void;
+}
+
+export const FormTodo = ({ onCreateTask }: FormTodoProps) => {
+  const [description, setDescription] = useState("");
+
+  const handleSubmit = () => {
+    event.preventDefault();
+
+    onCreateTask({
+      id: uuid(),
+      descricao: description,
+      concluido: false,
+    });
+
+    setDescription("");
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className={styles.container}>
-        <input required />
-        <button type="submit">criar</button>
+        <input
+          required
+          placeholder="Adicione uma nova tarefa"
+          value={description}
+          onChange={(event) => {
+            setDescription(event.currentTarget.value);
+          }}
+        />
+        <button type="submit">
+          Criar <PlusCircle size={24} />
+        </button>
       </div>
     </form>
   );
