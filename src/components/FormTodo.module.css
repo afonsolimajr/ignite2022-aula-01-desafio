@@ -1,12 +1,8 @@
 .container {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
   width: 100%;
-  /* top: -25px; */
-  /* position: relative; */
-  border: 1px solid lime;
-  /* border: 0; */
+  gap: 0.4rem;
 }
 
 button {
@@ -29,7 +25,9 @@ button:hover {
 input {
   height: 50px;
   width: 100%;
+  color: var(--gray-300);
   background: var(--gray-500);
   border-color: var(--gray-700);
   border-radius: 8px;
+  padding: 1rem;
 }

@@ -1,7 +1,7 @@
 import { PlusCircle } from "phosphor-react";
 import { useState } from "react";
 import { ITarefa } from "../interfaces/ITarefa";
-import uuid from "react-uuid";
+import { v4 as uuidv4 } from "uuid";
 import styles from "./FormTodo.module.css";
 
 interface FormTodoProps {
@@ -15,7 +15,7 @@ export const FormTodo = ({ onCreateTask }: FormTodoProps) => {
     event.preventDefault();
 
     onCreateTask({
-      id: uuid(),
+      id: uuidv4(),
       descricao: description,
       concluido: false,
     });
